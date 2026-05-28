@@ -1,0 +1,963 @@
+( edif TOP
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap  
+		(keywordLevel 0)
+	)
+	(status  
+		(written  
+			(timestamp 2026 1 14 14 56 50)
+			(author "IE")
+			(program "Aldec_EDIF_generator" 
+				(version "1.10")
+			)
+		)
+	)
+	(library KOSCI 
+		(edifLevel 0)
+		(technology  
+			(numberDefinition )
+		)
+		(cell counter 
+			(cellType generic)
+			(view net 
+				(viewType netlist)
+				(interface  
+					(port  
+						(array ( rename BIN_3_0_ "BIN[3:0]" ) 4)
+						(direction OUTPUT)
+					)
+					(port CE 
+						(direction INPUT)
+					)
+					(port CLK 
+						(direction INPUT)
+					)
+					(port CLR 
+						(direction INPUT)
+					)
+				)
+			)
+		)
+		(cell Debouncer 
+			(cellType generic)
+			(view net 
+				(viewType netlist)
+				(interface  
+					(port CEI 
+						(direction INPUT)
+					)
+					(port CLK 
+						(direction INPUT)
+					)
+					(port CLR 
+						(direction INPUT)
+					)
+					(port PE 
+						(direction OUTPUT)
+					)
+					(port PUSH 
+						(direction INPUT)
+					)
+				)
+			)
+		)
+		(cell lock 
+			(cellType generic)
+			(view net 
+				(viewType netlist)
+				(interface  
+					(port BUTTON 
+						(direction INPUT)
+					)
+					(port LOCKED 
+						(direction OUTPUT)
+					)
+					(port SWITCH 
+						(direction INPUT)
+					)
+				)
+			)
+		)
+		(cell Prescaler 
+			(cellType generic)
+			(view net 
+				(viewType netlist)
+				(interface  
+					(port CEO 
+						(direction OUTPUT)
+					)
+					(port CLK 
+						(direction INPUT)
+					)
+					(port CLR 
+						(direction INPUT)
+					)
+					(port  
+						(array ( rename DIVIDE_FACTOR_26_0_ "DIVIDE_FACTOR[26:0]" ) 27)
+						(direction INPUT)
+					)
+				)
+			)
+		)
+		(cell seg7 
+			(cellType generic)
+			(view net 
+				(viewType netlist)
+				(interface  
+					(port  
+						(array ( rename AN_4_0_ "AN[4:0]" ) 5)
+						(direction OUTPUT)
+					)
+					(port CLK 
+						(direction INPUT)
+					)
+					(port CLR 
+						(direction INPUT)
+					)
+					(port  
+						(array ( rename IN0_3_0_ "IN0[3:0]" ) 4)
+						(direction INPUT)
+					)
+					(port  
+						(array ( rename IN1_3_0_ "IN1[3:0]" ) 4)
+						(direction INPUT)
+					)
+					(port  
+						(array ( rename IN2_3_0_ "IN2[3:0]" ) 4)
+						(direction INPUT)
+					)
+					(port  
+						(array ( rename IN3_3_0_ "IN3[3:0]" ) 4)
+						(direction INPUT)
+					)
+					(port  
+						(array ( rename IN4_3_0_ "IN4[3:0]" ) 4)
+						(direction INPUT)
+					)
+					(port  
+						(array ( rename OUT_6_0_ "OUT[6:0]" ) 7)
+						(direction OUTPUT)
+					)
+				)
+			)
+		)
+		(cell TOP 
+			(cellType generic)
+			(view net 
+				(viewType netlist)
+				(interface  
+					(port BUTTON 
+						(direction INPUT)
+					)
+					(port CLK 
+						(direction INPUT)
+					)
+					(port CLR 
+						(direction INPUT)
+					)
+					(port  
+						(array ( rename MUX_5_0_ "MUX[5:0]" ) 6)
+						(direction OUTPUT)
+					)
+					(port  
+						(array ( rename NUMBER_7_0_ "NUMBER[7:0]" ) 8)
+						(direction OUTPUT)
+					)
+					(port SWITCH0 
+						(direction INPUT)
+					)
+					(port SWITCH1 
+						(direction INPUT)
+					)
+					(port SWITCH2 
+						(direction INPUT)
+					)
+					(port SWITCH3 
+						(direction INPUT)
+					)
+					(port SWITCH4 
+						(direction INPUT)
+					)
+				)
+				(contents  
+					(instance U1 
+						(viewRef net 
+							(cellRef counter)
+						)
+					)
+					(instance U2 
+						(viewRef net 
+							(cellRef counter)
+						)
+					)
+					(instance U3 
+						(viewRef net 
+							(cellRef counter)
+						)
+					)
+					(instance U4 
+						(viewRef net 
+							(cellRef counter)
+						)
+					)
+					(instance U5 
+						(viewRef net 
+							(cellRef counter)
+						)
+					)
+					(instance U6 
+						(viewRef net 
+							(cellRef seg7)
+						)
+					)
+					(instance U8 
+						(viewRef net 
+							(cellRef Prescaler)
+						)
+					)
+					(instance U9 
+						(viewRef net 
+							(cellRef Prescaler)
+						)
+					)
+					(instance U10 
+						(viewRef net 
+							(cellRef Prescaler)
+						)
+					)
+					(instance U11 
+						(viewRef net 
+							(cellRef Prescaler)
+						)
+					)
+					(instance U12 
+						(viewRef net 
+							(cellRef Prescaler)
+						)
+					)
+					(instance U13 
+						(viewRef net 
+							(cellRef lock)
+						)
+					)
+					(instance U14 
+						(viewRef net 
+							(cellRef lock)
+						)
+					)
+					(instance U15 
+						(viewRef net 
+							(cellRef lock)
+						)
+					)
+					(instance U16 
+						(viewRef net 
+							(cellRef lock)
+						)
+					)
+					(instance U17 
+						(viewRef net 
+							(cellRef lock)
+						)
+					)
+					(instance U18 
+						(viewRef net 
+							(cellRef Prescaler)
+						)
+					)
+					(instance U19 
+						(viewRef net 
+							(cellRef Debouncer)
+						)
+					)
+					(instance U20 
+						(viewRef net 
+							(cellRef Prescaler)
+						)
+					)
+					(net ( rename BUS38_0_ "BUS38[0]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 3)
+								(instanceRef U1)
+							)
+							(portRef  
+								(member IN0_3_0_ 3)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS38_1_ "BUS38[1]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 2)
+								(instanceRef U1)
+							)
+							(portRef  
+								(member IN0_3_0_ 2)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS38_2_ "BUS38[2]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 1)
+								(instanceRef U1)
+							)
+							(portRef  
+								(member IN0_3_0_ 1)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS38_3_ "BUS38[3]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 0)
+								(instanceRef U1)
+							)
+							(portRef  
+								(member IN0_3_0_ 0)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS44_0_ "BUS44[0]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 3)
+								(instanceRef U2)
+							)
+							(portRef  
+								(member IN1_3_0_ 3)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS44_1_ "BUS44[1]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 2)
+								(instanceRef U2)
+							)
+							(portRef  
+								(member IN1_3_0_ 2)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS44_2_ "BUS44[2]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 1)
+								(instanceRef U2)
+							)
+							(portRef  
+								(member IN1_3_0_ 1)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS44_3_ "BUS44[3]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 0)
+								(instanceRef U2)
+							)
+							(portRef  
+								(member IN1_3_0_ 0)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS52_0_ "BUS52[0]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 3)
+								(instanceRef U3)
+							)
+							(portRef  
+								(member IN2_3_0_ 3)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS52_1_ "BUS52[1]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 2)
+								(instanceRef U3)
+							)
+							(portRef  
+								(member IN2_3_0_ 2)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS52_2_ "BUS52[2]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 1)
+								(instanceRef U3)
+							)
+							(portRef  
+								(member IN2_3_0_ 1)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS52_3_ "BUS52[3]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 0)
+								(instanceRef U3)
+							)
+							(portRef  
+								(member IN2_3_0_ 0)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS60_0_ "BUS60[0]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 3)
+								(instanceRef U4)
+							)
+							(portRef  
+								(member IN3_3_0_ 3)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS60_1_ "BUS60[1]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 2)
+								(instanceRef U4)
+							)
+							(portRef  
+								(member IN3_3_0_ 2)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS60_2_ "BUS60[2]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 1)
+								(instanceRef U4)
+							)
+							(portRef  
+								(member IN3_3_0_ 1)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS60_3_ "BUS60[3]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 0)
+								(instanceRef U4)
+							)
+							(portRef  
+								(member IN3_3_0_ 0)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS68_0_ "BUS68[0]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 3)
+								(instanceRef U5)
+							)
+							(portRef  
+								(member IN4_3_0_ 3)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS68_1_ "BUS68[1]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 2)
+								(instanceRef U5)
+							)
+							(portRef  
+								(member IN4_3_0_ 2)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS68_2_ "BUS68[2]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 1)
+								(instanceRef U5)
+							)
+							(portRef  
+								(member IN4_3_0_ 1)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net ( rename BUS68_3_ "BUS68[3]" ) 
+						(joined  
+							(portRef  
+								(member BIN_3_0_ 0)
+								(instanceRef U5)
+							)
+							(portRef  
+								(member IN4_3_0_ 0)
+								(instanceRef U6)
+							)
+						)
+					)
+					(net BUTTON 
+						(joined  
+							(portRef BUTTON)
+							(portRef PUSH 
+								(instanceRef U19)
+							)
+						)
+					)
+					(net BUTTONN 
+						(joined  
+							(portRef BUTTON 
+								(instanceRef U13)
+							)
+							(portRef BUTTON 
+								(instanceRef U14)
+							)
+							(portRef BUTTON 
+								(instanceRef U15)
+							)
+							(portRef BUTTON 
+								(instanceRef U16)
+							)
+							(portRef BUTTON 
+								(instanceRef U17)
+							)
+							(portRef PE 
+								(instanceRef U19)
+							)
+						)
+					)
+					(net CLK 
+						(joined  
+							(portRef CLK)
+							(portRef CLK 
+								(instanceRef U10)
+							)
+							(portRef CLK 
+								(instanceRef U11)
+							)
+							(portRef CLK 
+								(instanceRef U12)
+							)
+							(portRef CLK 
+								(instanceRef U18)
+							)
+							(portRef CLK 
+								(instanceRef U19)
+							)
+							(portRef CLK 
+								(instanceRef U20)
+							)
+							(portRef CLK 
+								(instanceRef U8)
+							)
+							(portRef CLK 
+								(instanceRef U9)
+							)
+						)
+					)
+					(net CLR 
+						(joined  
+							(portRef CLR)
+							(portRef CLR 
+								(instanceRef U10)
+							)
+							(portRef CLR 
+								(instanceRef U11)
+							)
+							(portRef CLR 
+								(instanceRef U12)
+							)
+							(portRef CLR 
+								(instanceRef U1)
+							)
+							(portRef CLR 
+								(instanceRef U18)
+							)
+							(portRef CLR 
+								(instanceRef U19)
+							)
+							(portRef CLR 
+								(instanceRef U20)
+							)
+							(portRef CLR 
+								(instanceRef U2)
+							)
+							(portRef CLR 
+								(instanceRef U3)
+							)
+							(portRef CLR 
+								(instanceRef U4)
+							)
+							(portRef CLR 
+								(instanceRef U5)
+							)
+							(portRef CLR 
+								(instanceRef U6)
+							)
+							(portRef CLR 
+								(instanceRef U8)
+							)
+							(portRef CLR 
+								(instanceRef U9)
+							)
+						)
+					)
+					(net ( rename MUX_0_ "MUX[0]" ) 
+						(joined  
+							(portRef  
+								(member MUX_5_0_ 5)
+							)
+						)
+						(property  BUS_NAME ( string "MUX[5:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename MUX_1_ "MUX[1]" ) 
+						(joined  
+							(portRef  
+								(member MUX_5_0_ 4)
+							)
+							(portRef  
+								(member AN_4_0_ 4)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "MUX[5:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename MUX_2_ "MUX[2]" ) 
+						(joined  
+							(portRef  
+								(member MUX_5_0_ 3)
+							)
+							(portRef  
+								(member AN_4_0_ 3)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "MUX[5:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename MUX_3_ "MUX[3]" ) 
+						(joined  
+							(portRef  
+								(member MUX_5_0_ 2)
+							)
+							(portRef  
+								(member AN_4_0_ 2)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "MUX[5:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename MUX_4_ "MUX[4]" ) 
+						(joined  
+							(portRef  
+								(member MUX_5_0_ 1)
+							)
+							(portRef  
+								(member AN_4_0_ 1)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "MUX[5:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename MUX_5_ "MUX[5]" ) 
+						(joined  
+							(portRef  
+								(member MUX_5_0_ 0)
+							)
+							(portRef  
+								(member AN_4_0_ 0)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "MUX[5:0]" )( owner "ALDEC" ) )
+					)
+					(net NET462 
+						(joined  
+							(portRef CEO 
+								(instanceRef U12)
+							)
+							(portRef CLK 
+								(instanceRef U5)
+							)
+						)
+					)
+					(net NET466 
+						(joined  
+							(portRef CEO 
+								(instanceRef U11)
+							)
+							(portRef CLK 
+								(instanceRef U4)
+							)
+						)
+					)
+					(net NET470 
+						(joined  
+							(portRef CEO 
+								(instanceRef U10)
+							)
+							(portRef CLK 
+								(instanceRef U3)
+							)
+						)
+					)
+					(net NET474 
+						(joined  
+							(portRef CLK 
+								(instanceRef U2)
+							)
+							(portRef CEO 
+								(instanceRef U9)
+							)
+						)
+					)
+					(net NET478 
+						(joined  
+							(portRef CLK 
+								(instanceRef U1)
+							)
+							(portRef CEO 
+								(instanceRef U8)
+							)
+						)
+					)
+					(net NET482 
+						(joined  
+							(portRef LOCKED 
+								(instanceRef U13)
+							)
+							(portRef CE 
+								(instanceRef U1)
+							)
+						)
+					)
+					(net NET486 
+						(joined  
+							(portRef LOCKED 
+								(instanceRef U14)
+							)
+							(portRef CE 
+								(instanceRef U2)
+							)
+						)
+					)
+					(net NET490 
+						(joined  
+							(portRef LOCKED 
+								(instanceRef U15)
+							)
+							(portRef CE 
+								(instanceRef U3)
+							)
+						)
+					)
+					(net NET494 
+						(joined  
+							(portRef LOCKED 
+								(instanceRef U16)
+							)
+							(portRef CE 
+								(instanceRef U4)
+							)
+						)
+					)
+					(net NET498 
+						(joined  
+							(portRef LOCKED 
+								(instanceRef U17)
+							)
+							(portRef CE 
+								(instanceRef U5)
+							)
+						)
+					)
+					(net NET505 
+						(joined  
+							(portRef CEO 
+								(instanceRef U18)
+							)
+							(portRef CLK 
+								(instanceRef U6)
+							)
+						)
+					)
+					(net NET581 
+						(joined  
+							(portRef SWITCH 
+								(instanceRef U14)
+							)
+						)
+					)
+					(net NET597 
+						(joined  
+							(portRef SWITCH 
+								(instanceRef U16)
+							)
+						)
+					)
+					(net NET687 
+						(joined  
+							(portRef CEI 
+								(instanceRef U19)
+							)
+							(portRef CEO 
+								(instanceRef U20)
+							)
+						)
+					)
+					(net ( rename NUMBER_0_ "NUMBER[0]" ) 
+						(joined  
+							(portRef  
+								(member NUMBER_7_0_ 7)
+							)
+						)
+						(property  BUS_NAME ( string "NUMBER[7:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename NUMBER_1_ "NUMBER[1]" ) 
+						(joined  
+							(portRef  
+								(member NUMBER_7_0_ 6)
+							)
+							(portRef  
+								(member OUT_6_0_ 6)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "NUMBER[7:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename NUMBER_2_ "NUMBER[2]" ) 
+						(joined  
+							(portRef  
+								(member NUMBER_7_0_ 5)
+							)
+							(portRef  
+								(member OUT_6_0_ 5)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "NUMBER[7:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename NUMBER_3_ "NUMBER[3]" ) 
+						(joined  
+							(portRef  
+								(member NUMBER_7_0_ 4)
+							)
+							(portRef  
+								(member OUT_6_0_ 4)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "NUMBER[7:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename NUMBER_4_ "NUMBER[4]" ) 
+						(joined  
+							(portRef  
+								(member NUMBER_7_0_ 3)
+							)
+							(portRef  
+								(member OUT_6_0_ 3)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "NUMBER[7:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename NUMBER_5_ "NUMBER[5]" ) 
+						(joined  
+							(portRef  
+								(member NUMBER_7_0_ 2)
+							)
+							(portRef  
+								(member OUT_6_0_ 2)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "NUMBER[7:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename NUMBER_6_ "NUMBER[6]" ) 
+						(joined  
+							(portRef  
+								(member NUMBER_7_0_ 1)
+							)
+							(portRef  
+								(member OUT_6_0_ 1)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "NUMBER[7:0]" )( owner "ALDEC" ) )
+					)
+					(net ( rename NUMBER_7_ "NUMBER[7]" ) 
+						(joined  
+							(portRef  
+								(member NUMBER_7_0_ 0)
+							)
+							(portRef  
+								(member OUT_6_0_ 0)
+								(instanceRef U6)
+							)
+						)
+						(property  BUS_NAME ( string "NUMBER[7:0]" )( owner "ALDEC" ) )
+					)
+					(net SWITCH0 
+						(joined  
+							(portRef SWITCH0)
+							(portRef SWITCH 
+								(instanceRef U13)
+							)
+						)
+					)
+					(net SWITCH1 
+						(joined  
+							(portRef SWITCH1)
+						)
+					)
+					(net SWITCH2 
+						(joined  
+							(portRef SWITCH2)
+							(portRef SWITCH 
+								(instanceRef U15)
+							)
+						)
+					)
+					(net SWITCH3 
+						(joined  
+							(portRef SWITCH3)
+						)
+					)
+					(net SWITCH4 
+						(joined  
+							(portRef SWITCH4)
+							(portRef SWITCH 
+								(instanceRef U17)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(design TOP 
+		(cellRef TOP 
+			(libraryRef KOSCI)
+		)
+	)
+)
+

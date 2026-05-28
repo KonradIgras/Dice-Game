@@ -1,0 +1,89 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+alog -O2 -l ARTIX7 -sve -msg 5 -v2k5 -work kosci $dsn/src/TestBench/testbench.v
+# Warning: VCP2112 Library "ARTIX7" does not exist or is not visible from current project.
+# Error: VCP2000 TestBench/testbench.v : (96, 14): Syntax error. Unexpected token: begin[_BEGIN].
+# Warning: VCP2515 TestBench/testbench.v : (48, 18): Undefined module: TutorVerilog was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -l ARTIX7 -sve -msg 5 -v2k5 -work kosci $dsn/src/TestBench/testbench.v
+# Warning: VCP2112 Library "ARTIX7" does not exist or is not visible from current project.
+# Error: VCP2000 TestBench/testbench.v : (96, 14): Syntax error. Unexpected token: begin[_BEGIN].
+# Warning: VCP2515 TestBench/testbench.v : (48, 18): Undefined module: TutorVerilog was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -l ARTIX7 -sve -msg 5 -v2k5 -work kosci $dsn/src/TestBench/testbench.v
+# Warning: VCP2112 Library "ARTIX7" does not exist or is not visible from current project.
+# Error: VCP2000 TestBench/testbench.v : (83, 14): Syntax error. Unexpected token: begin[_BEGIN].
+# Warning: VCP2515 TestBench/testbench.v : (48, 18): Undefined module: TutorVerilog was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 2 Warnings  Analysis time: 0[s].
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+alog -O2 -l ARTIX7 -sve -msg 5 -v2k5 -work kosci $dsn/src/TestBench/testbench.v
+# Warning: VCP2112 Library "ARTIX7" does not exist or is not visible from current project.
+# Error: VCP2000 TestBench/testbench.v : (86, 14): Syntax error. Unexpected token: begin[_BEGIN].
+# Warning: VCP2515 TestBench/testbench.v : (48, 18): Undefined module: TutorVerilog was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -l ARTIX7 -sve -msg 5 -v2k5 -work kosci $dsn/src/TestBench/testbench.v
+# Warning: VCP2112 Library "ARTIX7" does not exist or is not visible from current project.
+# Error: VCP2000 TestBench/testbench.v : (53, 12): Syntax error. Unexpected token: initial[_INITIAL].
+# Error: VCP2000 TestBench/testbench.v : (55, 18): Syntax error. Unexpected token: =.
+# Error: VCP2020 TestBench/testbench.v : (71, 12): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 TestBench/testbench.v : (71, 12): Syntax error. Unexpected token: end[_END].
+# Compile failure 4 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -l ARTIX7 -sve -msg 5 -v2k5 -work kosci $dsn/src/TestBench/testbench.v
+# Warning: VCP2112 Library "ARTIX7" does not exist or is not visible from current project.
+# Error: VCP2000 TestBench/testbench.v : (86, 14): Syntax error. Unexpected token: begin[_BEGIN].
+# Warning: VCP2515 TestBench/testbench.v : (48, 18): Undefined module: TutorVerilog was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 2 Warnings  Analysis time: 0[s].
+alog -O2 -l ARTIX7 -sve -msg 5 -v2k5 -work kosci $dsn/src/TestBench/testbench.v
+# Warning: VCP2112 Library "ARTIX7" does not exist or is not visible from current project.
+# Error: VCP2000 TestBench/testbench.v : (86, 14): Syntax error. Unexpected token: begin[_BEGIN].
+# Warning: VCP2515 TestBench/testbench.v : (48, 18): Undefined module: testbench was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 2 Warnings  Analysis time: 0[s].
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+# Warning: Could not write to "C:/My_Designs/kosci/kosci/bde.set" file.
+edfcomp -work kosci $dsn/src/Top.bde
+# Compile...
+# DRC: Checking file "C:/My_Designs/kosci/kosci/src/Top.bde".
+# DRC: Warning: Top.bde - 0 error(s), 10 warning(s)
+# DRC: DRC process completed in 297 millisecond(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating C:/My_Designs/kosci/kosci/compile/Top.edn from C:/My_Designs/kosci/kosci/src/Top.bde...
+# Generation successful
+# EDFCOM: File: .\..\compile\top.edn
+# EDFCOM: Compilation successful; 0 errors
+# EDFCOM: .\..\compile\top.edn

@@ -1,0 +1,14 @@
+E TOP EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P MUX _out std_logic_vector[5:0]
+P NUMBER _out std_logic_vector[7:0]
+P BUTTON _in std_logic
+P CLK _in std_logic
+P CLR _in std_logic
+P SWITCH0 _in std_logic
+P SWITCH1 _in std_logic
+P SWITCH2 _in std_logic
+P SWITCH3 _in std_logic
+P SWITCH4 _in std_logic
+X TOP

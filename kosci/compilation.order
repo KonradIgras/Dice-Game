@@ -1,0 +1,6 @@
+.\src\lock.v
+.\src\counter.v
+.\src\seg7.v
+.\src\TOP.bde
+.\src\Prescaler (1).v
+.\src\debouncer.v

@@ -1,0 +1,11 @@
+[Version]
+Version=15.0
+[Designs]
+kosci=.\kosci\kosci.adf
+[Browser]
+sort=order
+mode=desc
+[Order]
+order=1
+[Expand]
+kosci=1

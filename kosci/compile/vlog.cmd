@@ -1,0 +1,1 @@
+-o C:/My_Designs/kosci/kosci/compile -lc C:/My_Designs/kosci/library.cfg -fl C:/My_Designs/kosci/kosci/projlib.cfg -pli "C:/Aldec/Active-HDL-15-x64/bin/systf.dll" -O2 -l ARTIX7 -sve -msg 5 -v2k5 -work kosci C:/My_Designs/kosci/kosci/src/TestBench/testbench.v 

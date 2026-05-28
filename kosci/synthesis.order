@@ -1,0 +1,7 @@
+i<>.\src\lock.v
+i<>.\src\counter.v
+i<>.\src\seg7.v
+i<>.\src\TOP.bde
+i<>.\src\Prescaler (1).v
+i<>.\src\debouncer.v
+i<>.\src\testbench.v

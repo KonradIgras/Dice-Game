@@ -1,0 +1,80 @@
+timestamp=1768399010502
+
+[~A]
+LastVerilogToplevel=Prescaler
+ModifyID=52
+Version=74
+c:/My_Designs/kosci/kosci/src/Prescaler (1).v=0*6072*6621
+c:/My_Designs/kosci/kosci/src/counter.v=0*2306*2817
+c:/My_Designs/kosci/kosci/src/debouncer.v=0*5037*5582
+c:/My_Designs/kosci/kosci/src/lock.v=0*0*428
+c:/My_Designs/kosci/kosci/src/lock.v_counter.v_seg7.v=0*3289*4519
+c:/My_Designs/kosci/kosci/src/seg7.v=0*897*1837
+
+[~MFT]
+0=1|0kosci.mgf|8709|0
+1=1|1kosci.mgf|17909|0
+2=0|2kosci.mgf|8909|0
+3=0|3kosci.mgf|5675|0
+
+[$root]
+A/$root=22|||1*0
+BinW64/$root=3*0
+SLP=3*115
+Version=15.0.260.9131 (Windows64)|00000013789cd3f53752d0cd51700c0af18c3057d02d33ca3605002e3b04dc|c73a565f2ade592f8ac1c68f484c9216ddbae9ba9c60af9b733a8f63452027e7
+
+[Debouncer]
+A/Debouncer=22|../src/debouncer.v|17|1*406
+BinW64/Debouncer=3*183
+NSymbols/debouncer=NSymbols/Debouncer 40|0|2*0
+R=../src/debouncer.v|17
+SLP=3*919
+Version=15.0.260.9131 (Windows64)|00000013789cd3f53752d0cd51700c0af18c3057d02d33ca3605002e3b04dc|45de01a226a3bd083f1dbeae866922409961e575aa7fd2c48b32ff31582402f58451c3afae7c0bf759b5f97fe125fa68
+
+[Prescaler]
+A/Prescaler=22|../src/Prescaler (1).v|23|1*1738
+A/prescaler=22|../src/Prescaler (1).v|10000|
+BinW64/Prescaler=3*1277
+NSymbols/prescaler=NSymbols/Prescaler 40|0|2*2182
+R=../src/Prescaler (1).v|23
+SLP=3*2086
+Version=15.0.260.9131 (Windows64)|00000013789cd3f53752d0cd51700c0af18c3057d02d33ca3605002e3b04dc|ab2da49470fce20409faaaad0a67e09dc81403c949c973d597ca82dc9410a01b5708cbc4c8562381dff0c59dcb5c4429
+
+[counter]
+A/counter=22|../src/counter.v|3|1*3088
+BinW64/counter=3*2451
+NSymbols/counter=40|0|2*4065
+R=../src/counter.v|3
+SLP=3*3028
+Version=15.0.260.9131 (Windows64)|00000013789cd3f53752d0cd51700c0af18c3057d02d33ca3605002e3b04dc|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a6808f20c61f6309d06c04de796cc81a4
+
+[lock]
+A/lock=22|../src/lock.v|4|1*4389
+BinW64/lock=3*3366
+NSymbols/lock=40|0|2*5938
+R=../src/lock.v|4
+SLP=3*3789
+Version=15.0.260.9131 (Windows64)|00000013789cd3f53752d0cd51700c0af18c3057d02d33ca3605002e3b04dc|75979c91edb4ed5f728dca071125cacacc2a08ec2704b2e37bb1b68825ad4132
+
+[seg7]
+A/seg7=22|../src/seg7.v|3|1*5300
+BinW64/seg7=3*4006
+NSymbols/seg7=40|0|2*8909
+R=../src/seg7.v|3
+SLP=3*5675
+Version=15.0.260.9131 (Windows64)|00000013789cd3f53752d0cd51700c0af18c3057d02d33ca3605002e3b04dc|29f241d0c46d425c45bf0b30e0c4edbc4623e77d7de8453538c18dafc982fb54
+
+[top]
+A/top=A/TOP 24|../src/TOP.bde|10000|1*17909
+R=../src/TOP.bde|4294967295
+Version=15.0.260.9131 (Windows64)||f1fdecad8dc292011c024b8d633bc5c7088e180ae5dec9fe3e123f87f82ec841
+
+[~U]
+$root=12|0*7115|
+Debouncer=12|0*7313||0x13
+Prescaler=12|0*7525||0x13
+counter=12|0*7748||0x13
+lock=12|0*7955||0x13
+prescaler=12||
+seg7=12|0*8161||0x13
+top=TOP 13|0*8709|

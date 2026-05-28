@@ -1,0 +1,3 @@
+MESSAGE "File: .\..\compile\top.edn"
+SUCCESS "Compilation successful; 0 errors"
+FILESTATUS ".\..\compile\top.edn" 0

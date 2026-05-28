@@ -1,0 +1,45 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=kosci
+[Library]
+kosci=.\kosci\kosci.lib
+[$LibMap$]
+kosci=.
+Active_lib=ARTIX7
+xilinxun=ARTIX7
+UnlinkedDesignLibrary=ARTIX7
+DESIGNS=ARTIX7
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+VerilogDirsChanged=1
+FAMILY=Xilinx2019x ARTIX7
+fileopenfolder=C:\My_Designs\kosci\kosci\src
+[Verilog Library]
+ARTIX7=
+[Files.Data]
+.\src\lock.v=Verilog Source Code
+.\src\counter.v=Verilog Source Code
+.\src\seg7.v=Verilog Source Code
+.\src\TOP.bde=Block Diagram
+.\src\Prescaler (1).v=Verilog Source Code
+.\src\debouncer.v=Verilog Source Code
+[Files]
+/lock.v=-1
+/counter.v=-1
+/seg7.v=-1
+/TOP.bde=-1
+/Prescaler (1).v=-1
+/debouncer.v=-1
+[file_out:/TOP.bde]
+/..\compile\Top.edn=-1
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
